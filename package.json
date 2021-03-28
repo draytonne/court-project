@@ -2,11 +2,10 @@
   "name": "templatee",
   "version": "1.0.0",
   "description": "node.js on docker",
-  "private": true,
   "author": "Karl Arum <karldrayton22@gmail.com>",
   "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

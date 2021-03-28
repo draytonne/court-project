@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Haki - Login</title>
+		<title>File Case</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,6 +15,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase.js"></script>
 		
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,32 +42,11 @@
 
 		<!-- Three -->
 			<section id="three" class="wrapper">
-				<div class="inner">
-					<header class="align-center">
-						<h2>Login</h2>
-						
-							<div class="container">
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input type="text" class="form-control shadow-sm" id="txtEmail" name="email">
-								  </div>
-								  <div class="form-group">
-									<label for="pwd">Password:</label>
-									<input type="password" class="form-control shadow-sm" id="txtPassword" name="password">
-								  </div>
-						
-									<button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
-									
-							</div>
-						  
-							
-							  <span class="psw">Forgot <a href="#">password?</a></span>
-							  <a href="registration.html" class="button">Create an account</a>
-							</div>
-						  </form>
-						
-
-				</div>
+				
+                <input type="file" id="files" multiple /><br /><br />
+                <button id="send" type="button" onclick="">Upload</button>
+                <p id="uploading"></p>
+                <progress value="0" max="100" id="progress"></progress>
 			</section>
 
 		<!-- Footer -->

@@ -1,131 +1,106 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
-		<title>Haki- registration</title>
+		<title>Haki - Login</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="subpage">
 
 		<!-- Header -->
 			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo"><strong>Haki Mkononi</strong> </a>
+				<div class="inner"><strong>
+					Haki mkononi</strong></a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="login.html">Login here</a>
-						<a href="registration.html">Register header</a>
+						<a href="registration.html">Register here</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
+		<!-- Three -->
+			<section id="three" class="wrapper">
 				<div class="inner">
-					<form>    
-						<h4 class="text-warning text-center pt-5">Registration Page</h4>  
+					<header class="align-center">
+						<h2>Register</h2>
 						
-						<label>     
+							<div class="container">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="text" class="form-control shadow-sm" id="txtEmail" name="email">
+								  </div>
+								  <div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control shadow-sm" id="txtPassword" name="password">
+								  </div>
 						
-							<input type="text" class="input" name="email" placeholder="EMAIL"/>                   <div class="line-box">          
-						
-									  <div class="line"></div>        
-						
-									  </div>    
-					
-									</label>     
-					
-									<label>     
-					
-									  <input 
-											type="text" 
-											 class="input" 
-											 name="username"      
-											 placeholder="USERNAME"/>        
-						
-									  <div class="line-box">         
-						
-										<div class="line"></div>        
-					
-									  </div>    
-					
-									</label>     
-						
-									<label>     
-						
-									  <input 
-											type="password" 
-											 class="input" 
-											 name="password" 
-											 placeholder="PASSWORD"/>        
-					
-									  <div class="line-box">          
-					
-										<div class="line"></div>        
-					
-									  </div>    
-					
-									</label>     
-					
-									<label>     
-										<input 
-											 type="password" 
-											 class="input" 
-											 name="confirm" 
-											placeholder="CONFIRM PASSWORD"/>      
-						
-									  <div class="line-box">        
-											<div class="line"></div>      
-					
-									  </div>    
-					
-									</label>     
-									<a href="login.html" class="button">Submit</a>
-					
-								  </form> 
-
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-
-					<h3>Get in touch</h3>
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
+									<button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+									<button type="submit" class="btn btn-primary shadow" id="btnSignup">Signup</button>
+							</div>
+						  
+							
+							  
+							  <a href="login.html" class="button">Press Here to Login</a>
+							</div>
+						  </form>
+						  
 						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
+					</section>
+		
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+		
+							<h3>Get in touch</h3>
+		
+							<form action="#" method="post">
+		
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input name="name" id="name" type="text" placeholder="Name">
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input name="email" id="email" type="email" placeholder="Email">
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input value="Send Message" class="button alt" type="submit"></li>
+								</ul>
+							</form>
+		
+							
+		
 						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
-						</ul>
-					</form>
-
-					<div class="copyright">
-						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-					</div>
-
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+					</footer>
+		
+				<!-- Scripts -->
+					<script src="login.js"></script>
+					<script src="assets/js/jquery.min.js"></script>
+					<script src="assets/js/skel.min.js"></script>
+					<script src="assets/js/util.js"></script>
+					<script src="assets/js/main.js"></script>
+		
+					
+		
+			</body>
+		</html>
