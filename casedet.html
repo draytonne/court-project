@@ -1,15 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Projection by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
-		<title>File Case</title>
+		<title>
+			Haki Mkononi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
@@ -22,15 +19,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<div class="inner"><strong>
-					Haki mkononi</strong></a>
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Haki mkononi</strong> <br><i class="subtil">Justice for all</i> </a>
+					<button type="submit" class="btn btn-primary shadow" id="btnSignOut">Signout</button>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="login.html">Login here</a>
@@ -40,7 +37,7 @@
 				</div>
 			</header>
 
-			<!-- Banner -->
+		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					<header>
@@ -53,50 +50,30 @@
 
 
 		<!-- Three -->
-        <div>
-			<input type="file"  id="files" name="files[]" multiple />
-            <button type="button" onclick="uploadFile()">Upload</button>
-            </div>
-
-			<footer id="footer">
-				<div class="inner">
-
-					<h3>Get in touch</h3>
-
-					
-
-						<div class="field half first">
-							<strong>Contact us through mobile:<br>
-							+254765389909 <br>
-							+254738765231<br></strong>
-						</div>
-						<div class="field half">
-							<strong>
-								Come to our offices at <br>
-								Sheria House,CBD.
-							</strong>
-						</div>
-						<div class="field">
-							Contact us through email:<br>
-							hmkononi@safekeeping.org.
-						</div>
-						
-
-					
-
-				</div>
-			</footer>
+        Name<br />
+<input type="text" id="form-name" /><br />
+Username<br />
+<input type="text" id="form-username" /><br />
+Gender<br />
+<select id="form-gender">
+  <option>Male</option>
+  <option>Female</option>
+  <option>Other</option> </select
+><br />
+<button>Register</button>
 
 
+      
+
+		
 		<!-- Scripts -->
-		<script src="login.js"></script>
+			<script src="login.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-
-
-
+</script>
+			
 	</body>
 </html>

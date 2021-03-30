@@ -67,12 +67,53 @@
         });
         
     });
+    
+    
+    
+    
+   }());
 
-    var fileButton = document.getElementById('send');
-fileButton.addEventListener('change', function(e){
-var file = e.target.files[0];
-var storageRef = firebase.storage().ref(file.name);
-storageRef.put(file);
-});
+  function uploadFile(){
+      
+    // Created a Storage Reference with root dir
+    var storageRef = firebase.storage().ref();
+    // Get the file from DOM
+    var file = document.getElementById("files").files[0];
+    console.log(file);
+    
+    //dynamically set reference to the file name
+    var thisRef = storageRef.child(file.name);
+
+    //put request upload file to firebase storage
+    thisRef.put(file).then(function(snapshot) {
+       alert("File Uploaded")
+       console.log('Uploaded a blob or file!');
+    });
+  }
    
-})
+const validateForm = () => {
+      const name = document.querySelector("#form-name").value;
+      const username = document.querySelector("#form-username").value;
+      const gender = document.querySelector("#form-gender").value;
+    
+      if (name.trim() == "" || username.trim() == "" || gender == "") {
+        alert("form not completely filled");
+      } else {
+        writeToDatabase(name, username, gender);
+      }
+    };
+    
+    const writeToDatabase = (name, username, gender) => {
+      firebase
+        .database()
+        .ref("Registration/" + Date.now())
+        .set({
+          name: name,
+          user: username,
+          gender: gender,
+        });
+    };
+    
+    document.querySelector("#register").addEventListener("click", () => {
+      validateForm();
+    });
